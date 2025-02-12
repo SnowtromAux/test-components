@@ -19,4 +19,4 @@ Welcome to **Test Components**! This repository contains a collection of reusabl
 
 ## Usage
 
-You can use these components individually or nest them to create more complex UI elements. For example, to include the action buttons within a table component, simply import the action buttons component into your table component's file.
+You can use these components individually or nest them to create more complex UI elements. For example, to include the action buttons within a table component, simply import the action buttons component into your table component's file and follow the buttons HTML structure.
