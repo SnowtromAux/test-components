@@ -1,0 +1,66 @@
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --primary-color: #009ef7;
+    --success-color: #50cd89;
+    --warning-color: #ffc700;
+    --danger-color: #f1416c;
+    --info-color: #7239ea;
+}
+
+.block {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 500;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+/* Sizes */
+.block.sm {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    min-height: 22px;
+    min-width: 70px;
+}
+
+.block.md {
+    font-size: 0.8125rem;
+    padding: 0.35rem 0.75rem;
+    min-height: 28px;
+    min-width: 90px;
+}
+
+.block.lg {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    min-height: 32px;
+    min-width: 110px;
+}
+
+/* Alignments */
+.block.left { justify-content: flex-start; }
+.block.center { justify-content: center; }
+.block.right { justify-content: flex-end; }
+
+/* Colors */
+.block.primary { background-color: var(--primary-color); }
+.block.success { background-color: var(--success-color); }
+.block.warning { background-color: var(--warning-color); }
+.block.danger { background-color: var(--danger-color); }
+.block.info { background-color: var(--info-color); }
+
+/* For demonstration purposes */
+body {
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
