@@ -6,6 +6,7 @@
     <title>Customizable Table Component</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../action buttons/buttons.css">
+    <link rel="stylesheet" href="../financial-display/display.css">
     <link rel="stylesheet" href="./table.css">
 </head>
 <body>
@@ -19,6 +20,7 @@
                                 <th class="narrow-column">#</th>
                                 <th>Name</th>
                                 <th>Created Date</th>
+                                <th>Financial</th>
                                 <th class="narrow-column">Actions</th>
                             </tr>
                         </thead>
@@ -27,6 +29,12 @@
                                 <td class="narrow-column number-cell" data-number="1"></td>
                                 <td>Admin</td>
                                 <td>01-05-2023 14:30</td>
+                                <td>
+                                    <div class="financial-container">
+                                        <span class="percentage positive">+482.07%</span>
+                                        <span class="amount">$803.44</span>
+                                    </div>
+                                </td>
                                 <td class="text-right">
                                     <div class="action-buttons">
                                         <a href="#" class="btn btn-small btn-primary"><i class="fas fa-edit"></i> Edit</a>
@@ -39,6 +47,12 @@
                                 <td class="narrow-column number-cell" data-number="2"></td>
                                 <td>User</td>
                                 <td>02-05-2023 09:15</td>
+                                <td>
+                                    <div class="financial-container">
+                                        <span class="percentage negative">-15.32%</span>
+                                        <span class="amount">$245.68</span>
+                                    </div>
+                                </td>
                                 <td class="text-right">
                                     <div class="action-buttons">
                                         <a href="#" class="btn btn-small btn-primary"><i class="fas fa-edit"></i> Edit</a>
@@ -51,6 +65,12 @@
                                 <td class="narrow-column number-cell" data-number="3"></td>
                                 <td>Manager</td>
                                 <td>03-05-2023 11:45</td>
+                                <td>
+                                    <div class="financial-container">
+                                        <span class="percentage neutral">0.00%</span>
+                                        <span class="amount">$500.00</span>
+                                    </div>
+                                </td>
                                 <td class="text-right">
                                     <div class="action-buttons">
                                         <a href="#" class="btn btn-small btn-primary"><i class="fas fa-edit"></i> Edit</a>

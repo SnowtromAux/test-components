@@ -1,0 +1,39 @@
+.financial-container {
+    font-family: var(--font-family, 'Poppins', sans-serif);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+    gap: 0.25rem;
+}
+.percentage {
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.percentage.positive {
+    color: #22c55e;
+}
+.percentage.negative {
+    color: var(--danger-color, #f1416c);
+}
+.percentage.neutral {
+    color: var(--info-color, #7239ea);
+    animation: pulse 2s infinite;
+}
+.amount {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-color, #181c32);
+}
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}

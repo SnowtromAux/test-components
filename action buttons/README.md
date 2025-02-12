@@ -1,10 +1,12 @@
-Customizable action buttons
+**Customizable Action Buttons**
 
-this file conatins examples
+This file contains examples of customizable action buttons.
 
-.small-button class makes the button small if you dont want it to be small remove it
+- **Small Button:**  
+  The `.small-button` class makes the button appear smaller. If you prefer the default size, simply remove this class.
 
-if you want any custom button (with custom icon and custom color) you can add them following the structure provided
+- **Custom Button:**  
+  To create a button with a custom icon and color, follow the provided structure.
 
-
-VERY IMPORTNAT! - when you implement the action button remove from .action-buttons the flex-wrap: wrap property it is only for showcasing
+**Important:**  
+When implementing the action button, remove the `flex-wrap: wrap` property from the `.action-buttons` class. This property is included only for demonstration purposes.
