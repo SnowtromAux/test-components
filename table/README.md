@@ -96,13 +96,6 @@ To disable a button, simply add `disabled` to the button tag.
 ### **4. Adding Icons to Buttons**
 For enhanced user interaction, use icons in buttons. TailwindCSS or Font Awesome icons can be integrated.
 
-#### **Example with Icons:**
-```html
-<button class="btn btn-primary">
-    <i class="fas fa-edit"></i> Edit
-</button>
-```
-
 ---
 ## **Best Practices**
 - **Follow Strict Class Naming:** Maintain the predefined class names for consistency.
