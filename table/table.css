@@ -21,11 +21,6 @@ body {
     padding: 20px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .card {
     background-color: var(--card-bg);
     border-radius: 0.625rem;
