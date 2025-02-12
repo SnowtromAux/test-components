@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customizable Table Component</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary-color: #009ef7;
@@ -91,15 +92,18 @@
             display: flex;
             gap: 0.25rem;
             justify-content: flex-end;
+            align-items: center; /* Center buttons vertically */
+            height: 100%; /* Ensure full height of the cell */
         }
 
         .btn {
             display: inline-flex;
             align-items: center;
-            padding: 0.5rem 1rem;
+            justify-content: center;
+            padding: 0.625rem 1rem;
             font-size: 0.875rem;
             font-weight: 500;
-            line-height: 1.5;
+            line-height: 1;
             text-align: center;
             white-space: nowrap;
             vertical-align: middle;
@@ -111,8 +115,12 @@
             text-decoration: none;
         }
 
+        .btn i {
+            margin-right: 0.375rem;
+        }
+
         .btn-small {
-            padding: 0.25rem 0.5rem;
+            padding: 0.5rem 0.75rem;
             font-size: 0.875rem;
         }
 
@@ -310,9 +318,9 @@
                                 <td>01-05-2023 14:30</td>
                                 <td class="text-right">
                                     <div class="action-buttons">
-                                        <a href="#" class="btn btn-small btn-primary">Edit</a>
-                                        <a href="#" class="btn btn-small btn-info">Show</a>
-                                        <button class="btn btn-small btn-danger">Delete</button>
+                                        <a href="#" class="btn btn-small btn-primary"><i class="fas fa-edit"></i> Edit</a>
+                                        <a href="#" class="btn btn-small btn-info"><i class="fas fa-eye"></i> Show</a>
+                                        <button class="btn btn-small btn-danger"><i class="fas fa-trash"></i> Delete</button>
                                     </div>
                                 </td>
                             </tr>
@@ -322,9 +330,9 @@
                                 <td>02-05-2023 09:15</td>
                                 <td class="text-right">
                                     <div class="action-buttons">
-                                        <a href="#" class="btn btn-small btn-primary">Edit</a>
-                                        <a href="#" class="btn btn-small btn-info">Show</a>
-                                        <button class="btn btn-small btn-danger">Delete</button>
+                                        <a href="#" class="btn btn-small btn-primary"><i class="fas fa-edit"></i> Edit</a>
+                                        <a href="#" class="btn btn-small btn-info"><i class="fas fa-eye"></i> Show</a>
+                                        <button class="btn btn-small btn-danger"><i class="fas fa-trash"></i> Delete</button>
                                     </div>
                                 </td>
                             </tr>
@@ -334,9 +342,9 @@
                                 <td>03-05-2023 11:45</td>
                                 <td class="text-right">
                                     <div class="action-buttons">
-                                        <a href="#" class="btn btn-small btn-primary">Edit</a>
-                                        <a href="#" class="btn btn-small btn-info">Show</a>
-                                        <button class="btn btn-small btn-danger">Delete</button>
+                                        <a href="#" class="btn btn-small btn-primary"><i class="fas fa-edit"></i> Edit</a>
+                                        <a href="#" class="btn btn-small btn-info"><i class="fas fa-eye"></i> Show</a>
+                                        <button class="btn btn-small btn-danger"><i class="fas fa-trash"></i> Delete</button>
                                     </div>
                                 </td>
                             </tr>
@@ -400,4 +408,3 @@
     </div>
 </body>
 </html>
-
