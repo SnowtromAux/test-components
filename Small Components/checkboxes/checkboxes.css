@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #3699ff;
+    --text-color: #3f4254;
+    --muted-color: #b5b5c3;
+    --border-color: #e4e6ef;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  .checkboxes-container {
+    font-family: var(--font-family);
+    font-size: 0.875rem;
+    color: var(--text-color);
+    padding: 0.75rem;
+    border-radius: 0.42rem;
+  }
+  
+  .checkbox-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .checkbox-row:last-child {
+    margin-bottom: 0;
+  }
+  
+  .checkbox-option {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  
+  .checkbox-option input[type="checkbox"] {
+    margin-right: 0.25rem;
+  }
+  
+  .checkbox-option input[type="checkbox"]:checked + .checkbox-label {
+    color: var(--primary-color);
+  }
+  
+  .checkbox-label {
+    cursor: pointer;
+  }
+  
+  

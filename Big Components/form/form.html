@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create New Role</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../Small Components/checkboxes/checkboxes.css">
+    <link rel="stylesheet" href="../../Small Components/select/select.css">
+    <link rel="stylesheet" href="./form.css">
 </head>
 <body>
     <div class="page-container">
@@ -12,7 +16,7 @@
                 <h3 class="role-card-heading">Create New Role</h3>
                 <div class="header-actions">
                     <a href="#" class="button button-primary">
-                        <i class="fa fa-arrow-left"></i> Back
+                        <i class="fa fa-arrow-left"></i>&nbsp;Back
                     </a>
                 </div>
             </div>
@@ -21,62 +25,115 @@
                     <h3 class="role-section-title">Role</h3>
                     
                     <div class="form-row">
-                        <label class="form-row-label" for="name">Name:</label>
-                        <input id="name" class="input-field input-field-solid input-field-compact" name="name" type="text" required placeholder="Enter role name">
-                    </div>
-
-                    <div class="form-row">
-                        <label class="form-row-label" for="color">Color:</label>
-                        <div class="select-container">
-                            <select id="color" name="color" class="input-field input-field-solid input-field-standard" required>
-                                <option value="" selected>Select</option>
-                                <option value="primary">Primary</option>
-                                <option value="success">Success</option>
-                                <option value="danger">Danger</option>
-                                <option value="warning">Warning</option>
-                                <option value="info">Info</option>
-                                <option value="dark">Dark</option>
-                                <option value="gray-900">Gray</option>
-                            </select>
+                        <div class="form-row-custom left">
+                            <label class="form-row-label" for="name">Name:</label>
+                        </div>
+                        <div class="form-row-custom right">
+                            <input id="name" class="input-field input-field-solid input-field-compact" name="name" type="text" required placeholder="Enter role name">
                         </div>
                     </div>
-
-                    <div class="permissions-section">
-                        <div class="permissions-section-label">Permission:</div>
-                        <div class="permissions-section-content">
-                            <div class="permissions-list">
-                                <label class="permission-option"><input type="checkbox" name="permission[1]" value="1"> role-list</label>
-                                <label class="permission-option"><input type="checkbox" name="permission[2]" value="2"> role-create</label>
-                                <label class="permission-option"><input type="checkbox" name="permission[3]" value="3"> role-edit</label>
-                                <label class="permission-option"><input type="checkbox" name="permission[4]" value="4"> role-delete</label>
-                            </div>
-                            <hr class="section-divider">
-                            <div class="permissions-list">
-                                <label class="permission-option"><input type="checkbox" name="permission[5]" value="5"> blog-list</label>
-                                <label class="permission-option"><input type="checkbox" name="permission[6]" value="6"> blog-create</label>
-                                <label class="permission-option"><input type="checkbox" name="permission[7]" value="7"> blog-edit</label>
-                                <label class="permission-option"><input type="checkbox" name="permission[8]" value="8"> blog-delete</label>
-                            </div>
-                            <hr class="section-divider">
-                            <div class="permissions-list">
-                                <label class="permission-option"><input type="checkbox" name="permission[9]" value="9"> widget-list</label>
-                                <label class="permission-option"><input type="checkbox" name="permission[10]" value="10"> widget-create</label>
-                                <label class="permission-option"><input type="checkbox" name="permission[11]" value="11"> widget-edit</label>
-                                <label class="permission-option"><input type="checkbox" name="permission[12]" value="12"> widget-delete</label>
+                    <div class="form-row">
+                        <div class="form-row-custom left">
+                            <label class="form-row-label" for="name">Name:</label>
+                        </div>
+                        <div class="form-row-custom right">
+                            <div class="select-wrapper">
+                                <div class="select-container">
+                                    <select id="" name="color" required>
+                                        <option value="" selected>Select</option>
+                                        <option value="primary">Primary</option>
+                                        <option value="success">Success</option>
+                                        <option value="danger">Danger</option>
+                                        <option value="warning">Warning</option>
+                                        <option value="info">Info</option>
+                                        <option value="dark">Dark</option>
+                                        <option value="gray-900">Gray</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
 
+
+
                     <div class="form-row">
-                        <label class="form-row-label"></label>
-                        <div class="form-footer">
-                            <div class="button-container">
-                                <button type="submit" class="button button-primary">
-                                    <i class="fa-solid fa-floppy-disk"></i> Submit
-                                </button>
-                                <button type="button" class="button button-secondary">
-                                    Cancel
-                                </button>
+                        <div class="form-row-custom left">
+                            <div class="form-row-label">Permission</div>
+                        </div>
+                        <div class="form-row-custom right">
+                            <div class="checkboxes-container">
+                                <div class="checkbox-row">
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="checkbox[1]" value="1">
+                                        <span class="checkbox-label">role-list</span>
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="checkbox[2]" value="2">
+                                        <span class="checkbox-label">role-create</span>
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="checkbox[3]" value="3">
+                                        <span class="checkbox-label">role-edit</span>
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="checkbox[4]" value="4">
+                                        <span class="checkbox-label">role-delete</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="checkbox[5]" value="5">
+                                        <span class="checkbox-label">blog-list</span>
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="checkbox[6]" value="6">
+                                        <span class="checkbox-label">blog-create</span>
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="checkbox[7]" value="7">
+                                        <span class="checkbox-label">blog-edit</span>
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="checkbox[8]" value="8">
+                                        <span class="checkbox-label">blog-delete</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="checkbox[9]" value="9">
+                                        <span class="checkbox-label">widget-list</span>
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="checkbox[10]" value="10">
+                                        <span class="checkbox-label">widget-create</span>
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="checkbox[11]" value="11">
+                                        <span class="checkbox-label">widget-edit</span>
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="checkbox[12]" value="12">
+                                        <span class="checkbox-label">widget-delete</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-row-custom left">
+                            <!-- Custom code for left side -->
+                        </div>
+                        <div class="form-row-custom right">
+                            <div class="form-footer">
+                                <div class="button-container">
+                                    <button type="submit" class="button button-primary">
+                                        <i class="fa-solid fa-floppy-disk"></i>&nbsp;Submit
+                                    </button>
+                                    <button type="button" class="button button-secondary">
+                                        Cancel
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -86,3 +143,4 @@
     </div>
 </body>
 </html>
+

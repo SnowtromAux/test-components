@@ -1,0 +1,87 @@
+:root {
+    --select-bg: #f3f6f9;
+    --select-border: #e4e6ef;
+    --select-focus: #69b3ff;
+    --select-arrow: #3f4254;
+  }
+  
+  .select-wrapper {
+    display: inline-block;
+    width: 200px; /* Adjust this value to your preferred width */
+  }
+  
+  .select-container {
+    position: relative;
+  }
+  
+  .select-container::after {
+    content: "\25BC";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 0.8em;
+    color: var(--select-arrow);
+  }
+  
+  .select-container select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--select-bg);
+    background-clip: padding-box;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .select-container select:focus {
+    border-color: var(--select-focus);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(54, 153, 255, 0.25);
+  }
+  
+  .select-container select:hover {
+    border-color: var(--select-border);
+  }
+  
+  /* Styling for dropdown options */
+  .select-container select option {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-color);
+    background-color: #ffffff;
+  }
+  
+  .select-container select option:hover,
+  .select-container select option:focus,
+  .select-container select option:active {
+    background-color: var(--select-bg);
+  }
+  
+  /* For Firefox */
+  .select-container select {
+    -moz-padding-start: calc(1rem - 3px);
+  }
+  
+  /* For IE and Edge */
+  select::-ms-expand {
+    display: none;
+  }
+  
+  @-moz-document url-prefix() {
+      .select-container select {
+          text-indent: 0.01px;
+          text-overflow: '';
+          padding-right: 1rem;
+      }
+  }
+  
+  
